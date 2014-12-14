@@ -1,12 +1,12 @@
 /**
  * Conditionals_Industry - Created by jacobawillford on 12/11/14.
  */
-//asking if they want to take the test
+//asking if they want to take the test or not
 var answer = prompt("Would you like to take a test to improve our company?\nPlease answer 'yes' or 'no'.");
 //if answer is equal to nothing
 if (answer == ""){
 //then ask again
-    answer = prompt("Please do not leave this blank.\nWould you like to take a test to improve our company?\nPlease answer 'yes' or 'no'.")
+    answer = prompt("Please do not leave this blank.\nWould you like to take a test to improve our company?\nPlease answer 'yes' or 'no'.");
 //else if answer is equal to "no"
 }else if (answer == "no"){
 //alert
@@ -37,7 +37,7 @@ var computer = 49;
 //if device is equal to nothing
 if(device == ""){
 //then ask again
-    device = prompt("Please do not leave this blank.\nWhat type of device do you use to access our website?\nPlease enter one of these: 'tablet', 'phone', 'computer'.")
+    device = prompt("Please do not leave this blank.\nWhat type of device do you use to access our website?\nPlease enter one of these: 'tablet', 'phone', 'computer'.");
 //else if device is equal to tablet
 }else if (device == "tablet"){
 //then add 1 to tablet
