@@ -22,14 +22,14 @@ if (shape == "rectangular prism"){
 }
 function areaRectangle(length, height, width){
     var area = length * height + width;
-    alert("The area of your rectangular prism is " + area + " square in.");
+    alert("The area of your rectangular prism is " + area + " in. cubed");
 }
 function areaSphere(radius){
     var pi = 3.14;
     var area = 4 * pi * radius * radius;
-    alert("The area of your sphere is " + area + " square in.");
+    alert("The area of your sphere is " + area + " in. cubed");
 }
 function areaPyramid(length, width, height){
     var area = (1/3) * (length * width) * height;
-    alert("The area of your pyramid is " + area + " square in.");
+    alert("The area of your pyramid is " + area + " in. cubed");
 }
