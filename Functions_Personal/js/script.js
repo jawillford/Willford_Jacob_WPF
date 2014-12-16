@@ -1,33 +1,35 @@
 /**
  * Functions_Personal - Created by jacobawillford on 12/16/14.
  */
-var shape = prompt("What is the shape of your object?\nAnswer: 'rectangle, circle, or triangle'.");
+var shape = prompt("What is the shape of your object?\nAnswer: 'rectangular prism, sphere, or pyramid'.");
 
 if (shape == ""){
     shape = prompt("Please do not leave this blank.\nWhat is the shape of your object?\nAnswer: 'rectangle, circle, or triangle'.");
 }
-if (shape == "rectangle"){
-    var length = prompt("What is the length of your rectangle?");
-    var height = prompt("What is the height of your rectangle?");
-    areaRectangle(length, height);
-}else if (shape == "circle"){
+if (shape == "rectangular prism"){
+    var length = prompt("What is the length of your rectangular prism?");
+    var height = prompt("What is the height of your rectangular prism?");
+    var width = prompt("What is the width of your rectangular prism?");
+    areaRectangle(length, height, width);
+}else if (shape == "sphere"){
     var radius = prompt("What is the radius of your circle?");
-    areaCircle(radius);
+    areaSphere(radius);
 }else{
-    var base = prompt("What is the base of your triangle?");
-    var height1 = prompt("What is the height of your triangle?");
-    areaTriangle(base, height1);
+    var length1 = prompt("What is the length of the base of your pyramid?");
+    var width1 = prompt("What is the width of the base of your pyramid?");
+    var height1 = prompt("What is the height of your pyramid?");
+    areaPyramid(length1, width1, height1);
 }
-function areaRectangle(length, height){
-    var area = length * height;
-    alert("The area of your rectangle is " + area + " square in.");
+function areaRectangle(length, height, width){
+    var area = length * height + width;
+    alert("The area of your rectangular prism is " + area + " square in.");
 }
-function areaCircle(radius){
+function areaSphere(radius){
     var pi = 3.14;
-    var area = pi * radius * radius;
-    alert("The area of your circle is " + area + " square in.");
+    var area = 4 * pi * radius * radius;
+    alert("The area of your sphere is " + area + " square in.");
 }
-function areaTriangle(base, height){
-    var area = .5 * base * height;
-    alert("The area of your triangle is " + area + " square in.");
+function areaPyramid(length, width, height){
+    var area = (1/3) * (length * width) * height;
+    alert("The area of your pyramid is " + area + " square in.");
 }
